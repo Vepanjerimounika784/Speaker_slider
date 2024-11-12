@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker slider</title>
+    <link rel="stylesheet" href="style.css">
+       
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="head">
+        <span class="title">View our Featured Speakers for the Event</span>
+        <br>
+        <span class="sub-title">Speakers are core contributors and industry thought leaders working at
+            <span style="color: #003FB4;">companies</span> that push for innovation.</span>
+    </div>
+
+    <!-- Popup (Initially hidden) -->
+    <div class="popup" style="display: none;" id="popup">
+        <button class="popup-close" id="close-popup">X</button>
+        <div class="popup-image-wrapper">
+            <img id="popup-image" src="" alt="Speaker Image" class="popup-image">
+        </div>
+
+        <div class="popup-details">
+            <h2 id="popup-name"></h2>
+            <p id="popup-position"></p>
+            <p id="popup-company"></p>
+            <div class="icon-space">
+                <img src="./images/simple-icons_drupal.png" >
+                <img src="./images/ri_twitter-x-fill.svg">
+                <img src="./images/Vector.png"  >
+            </div>
+        </div>
+        <span style="height: 150px; border-left: 3px solid black;"></span>
+        <div class="com-details">
+            Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash
+            cross-platform best practices rather than pandemic total linkage. Synergistically monetize parallel
+            infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic
+            theme areas.
+
+        </div>
+    </div>
+
+    <!-- Carousel Container -->
+    <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <!-- Cards with data attributes for easy access -->
+            <div class="card" data-name="John Doe" data-position="Chief Marketing Officer" data-company="Acme Corp"
+                data-image="images/speaker1.jpg">
+                <img src="images/speaker1.jpg" alt="Speaker 1">
+                <h2>John Doe</h2>
+                <p>Chief Marketing Officer</p>
+                <p class="company">Acme Corp</p>
+            </div>
+            <div class="card" data-name="John Doe" data-position="Chief Engagement Officer" data-company="Acquia"
+                data-image="images/speaker2.jpg">
+                <img src="images/speaker2.jpg" alt="Speaker 2">
+                <h2>John Doe</h2>
+                <p>Chief Engagement Officer</p>
+                <p class="company">Acquia</p>
+            </div>
+            <div class="card" data-name="John Doe" data-position="Chief Technical Developer" data-company="Pantheon"
+                data-image="images/speaker3.jpg">
+                <img src="images/speaker3.jpg" alt="Speaker 3">
+                <h2>John Doe</h2>
+                <p>Chief Technical Developer</p>
+                <p class="company">Pantheon</p>
+            </div>
+            <div class="card" data-name="John Doe" data-position="Chief Marketing Officer" data-company="Specbee"
+                data-image="images/speaker4.jpg">
+                <img src="images/speaker4.jpg" alt="Speaker 4">
+                <h2>John Doe</h2>
+                <p>Chief Marketing Officer</p>
+                <p class="company">Specbee</p>
+            </div>
+            <div class="card" data-name="John Doe" data-position="Chief Marketing Officer" data-company="Acme Corp"
+                data-image="images/speaker1.jpg">
+                <img src="images/speaker1.jpg" alt="Speaker 1">
+                <h2>John Doe</h2>
+                <p>Chief Marketing Officer</p>
+                <p class="company">Acme Corp</p>
+            </div>
+            <div class="card" data-name="John Doe" data-position="Chief Engagement Officer" data-company="Acquia"
+                data-image="images/speaker2.jpg">
+                <img src="images/speaker2.jpg" alt="Speaker 2">
+                <h2>John Doe</h2>
+                <p>Chief Engagement Officer</p>
+                <p class="company">Acquia</p>
+            </div>
+        </div>
+
+        <!-- Carousel Navigation Arrows -->
+        <button class="arrow arrow-left" id="prev">❮</button>
+        <button class="arrow arrow-right" id="next">❯</button>
+    </div>
+
+    <!-- Program Button -->
+    <button class="program-button">See the Program</button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

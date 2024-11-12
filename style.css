@@ -1,0 +1,203 @@
+
+
+body {
+   font-family: Arial, sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   margin: 0;
+   background-color: #f0f0f0;
+   overflow-x: hidden;
+}
+
+.head {
+   text-align: center;
+   /* margin-bottom: 30px; */
+   padding-top:10px;
+   /* padding-bottom:70px; */
+}
+
+.title {
+   font-size: 2rem;
+   font-weight: bold;
+   color: #000;
+}
+
+.sub-title {
+   font-size: 1.2rem;
+   margin-top: 10px;
+}
+
+.sub-title span {
+   color: #003FB4;
+}
+      
+       /* Popup styles */
+       .popup {
+           display: none;
+           /* Initially hidden */
+           position: relative;
+           width:1106px;
+           height: 170px;
+           background-color: white;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+           padding: 20px;
+           border-radius: 10px;
+           z-index: 5;
+           display: flex;
+           align-items: center;
+           margin-top: 20px;
+       }
+
+       .popup-close {
+           position: absolute;
+           top: 10px;
+           right: 10px;
+           background-color: rgba(0, 0, 0, 0.5);
+           color: white;
+           font-size: 18px;
+           border: none;
+           cursor: pointer;
+           padding: 5px 10px;
+           border-radius: 5px;
+       }
+
+       .popup-image-wrapper {
+           margin-right: 20px;
+           flex-shrink: 0;
+       }
+
+       .popup-image {
+           width: 120px;
+           height: 120px;
+           border-radius: 50%;
+           object-fit: cover;
+       }
+
+       .popup-details {
+           /* display: flex; */
+           flex-direction: column;
+           justify-content: center;
+           width:33%;
+       }
+
+       .popup-details h2 {
+           font-size: 1.6rem;
+           padding-top: 2px;
+           padding-bottom: 14px;
+           padding-left:10px;
+           padding-right:2px;
+           margin-top: 2px;
+           margin-bottom: 2px;
+       }
+
+       .popup-details p {
+           font-size: 1.2rem;
+           padding-top: 2px;
+           padding-bottom: 2px;
+           padding-left:10px;
+           margin-top: 2px;
+           margin-bottom: 2px;
+       }
+       #popup-company{
+           color:#6B6B6B;
+           padding-bottom: 24px;
+
+       }
+       /* Carousel container styles */
+       .carousel-container {
+           position: relative;
+           padding-bottom: 15px;
+           width: 80%;
+           max-width: 1165px;
+           overflow: hidden;
+           margin-top: 30px;
+       }
+
+       .carousel {
+           display: flex;
+           transition: transform 0.5s ease-in-out;
+       }
+
+       .card {
+           min-width: 20%;
+           margin: 0 10px;
+           background-color: #ffffff;
+           box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+           border-radius: 10px;
+           padding: 20px;
+           text-align: center;
+           cursor: pointer;
+           transition: transform 0.3s ease-in-out;
+       }
+
+       .card img {
+           width: 100px;
+           height: 100px;
+           object-fit: cover;
+           border-radius: 50%;
+           margin-bottom: 10px;
+       }
+
+       .card:hover {
+           transform: scale(1.05);
+       }
+
+       .arrow {
+           position: absolute;
+           top: 50%;
+           transform: translateY(-50%);
+           font-size: 30px;
+           background-color: rgba(0, 0, 0, 0.5);
+           color: white;
+           border: none;
+           padding: 10px;
+           cursor: pointer;
+           z-index: 10;
+       }
+       
+       .arrow-left {
+           left: 10px;
+       }
+
+       .arrow-right {
+           right: 0px;
+       }
+
+       .program-button {
+           padding: 10px 20px;
+           font-size: 1.2rem;
+           background-color: #003FB4;
+           color: white;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+           display: block;
+           margin: 20px auto;
+       }
+
+       .com-details {
+           margin-left: 10px;
+           width: 80%;
+           text-align: justify;
+           padding-top:0px;
+          padding-bottom:43px;
+           gap:16px;
+       }
+       .company {
+           color: #6B6B6B;
+       }
+
+       .icon-space {
+           gap: 16px;
+           display: flex;
+           padding-top: 2px;
+           padding-bottom: 2px;
+           padding-left:10px;
+           padding-right:2px;
+           height: 20px;
+           width: 49px;
+       }
+   
